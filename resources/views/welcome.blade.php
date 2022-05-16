@@ -1,6 +1,7 @@
 @extends('layouts.app')
 @section('content')
 @if (auth()->check())
+<div class="social-feed-box">
 <div class="col-6 mx-auto">
 
 <form action="{{ url("/") }}" method="POST">
@@ -9,6 +10,7 @@
     <input type="submit"  class="btn btn-success" value="Post">
 </form>
 
+</div>
 </div>    
 @else
     
