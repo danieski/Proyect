@@ -8,7 +8,10 @@ use Illuminate\Database\Eloquent\Model;
 class Post extends Model
 {
     use HasFactory;
-    protected $fillable = ['body'];
+    protected $fillable = [
+        'body',
+        'user_id',
+    ];
     //MODELS Agregamos una relacion entre la tabla posts y users?
     public function user()
     {
