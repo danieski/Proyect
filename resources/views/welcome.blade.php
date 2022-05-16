@@ -32,7 +32,7 @@
             <a href="#">
                 {{$Post->users->name}}
             </a>
-            <small class="text-muted">{{$Post->created_at}}</small>
+            <small class="text-muted">{{$Post->created_at-diffForHumans() }}</small>
         </div>
     </div>
     <div class="social-body">
