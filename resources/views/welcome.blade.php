@@ -18,7 +18,7 @@
 <link href="/css/main.css" rel="stylesheet">
 <div class="mx-auto">
 
-<div class="social-feed-box w-50 ml-3 p-3">
+<div class="social-feed-box">
 
     <div class="pull-right social-action dropdown">
        
