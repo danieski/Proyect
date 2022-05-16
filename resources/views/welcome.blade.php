@@ -30,7 +30,7 @@
         </a>
         <div class="media-body">
             <a href="#">
-                {{$Post->users->name}}
+                {{$Post->user->name}}
             </a>
             <small class="text-muted">{{$Post->created_at-diffForHumans() }}</small>
         </div>
