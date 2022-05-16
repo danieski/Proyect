@@ -16,6 +16,8 @@
 
 <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
 <link href="/css/main.css" rel="stylesheet">
+<div class="h-100 row align-items-center">
+
 <div class="social-feed-box w-50 p-3">
 
     <div class="pull-right social-action dropdown">
@@ -46,6 +48,7 @@
             <button class="btn btn-white btn-xs"><i class="fa fa-share"></i> Share</button>
         </div>
     </div>
+</div>
 </div>
 @endforeach
 @endsection
