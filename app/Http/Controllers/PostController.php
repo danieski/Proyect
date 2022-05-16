@@ -14,10 +14,11 @@ class PostController extends Controller
         return view('welcome',['Posts' => $some]);
     }
     public function store(Request $request){
+        //Verify correct input
         $this->validate($request, [
-            'body' => 'required'
+            'body' => 'required|max:70'
         ]);
-
+        //We are adding user_id from ur user authentication id
         Post::create([
             'user_id' => auth()->id(),
             'body' => $request->body,

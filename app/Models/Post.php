@@ -7,6 +7,7 @@ use Illuminate\Database\Eloquent\Model;
 
 class Post extends Model
 {
+    //All the data has to be filleable
     use HasFactory;
     protected $fillable = [
         'body',
