@@ -30,7 +30,7 @@
         </a>
         <div class="media-body">
             <a href="#">
-                Andrew Williams
+                {{$Post->user->name}}
             </a>
             <small class="text-muted">{{$Post->created_at}}</small>
         </div>
