@@ -1,7 +1,7 @@
 @extends('layouts.app')
 @section('content')
 @if (auth()->check())
-<div class="d-flex justify-content-center">
+<div class="col-6 mx-auto">
 <form action="{{ url("/") }}" method="POST">
     @csrf
     <input type="text"  name="body" placeholder="Post Something">
@@ -12,10 +12,10 @@
     
 @endif
 <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
-
+<link href="/css/main.css" rel="stylesheet">
 
 @foreach ($Posts as $Post )
-<div class="col-6 mx-auto">
+
 
 
 <div class="social-feed-box">
@@ -49,9 +49,9 @@
         </div>
     </div>
 </div>
-</div>
-@endforeach
 
+@endforeach
+</div>
 
 
 
