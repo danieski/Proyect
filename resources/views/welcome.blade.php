@@ -19,9 +19,7 @@
 <div class="social-feed-box">
 
     <div class="pull-right social-action dropdown">
-        <button data-toggle="dropdown" class="dropdown-toggle btn-white">
-            <i class="fa fa-angle-down"></i>
-        </button>
+       
         <ul class="dropdown-menu m-t-xs">
             <li><a href="#">Config</a></li>
         </ul>
