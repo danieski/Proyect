@@ -16,7 +16,7 @@
 
 <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
 <link href="/css/main.css" rel="stylesheet">
-<div class="col-6">
+<div class="col-6 mx-auto">
 
 <div class="social-feed-box">
 
