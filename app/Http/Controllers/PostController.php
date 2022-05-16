@@ -10,7 +10,7 @@ class PostController extends Controller
     public function index()
     {
         //return Post::all();
-        $some = Post::all();
+        $some = Post::orderBy('id', 'DESC')->get();
         return view('welcome',['Posts' => $some]);
     }
     public function store(Request $request){
