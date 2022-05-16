@@ -9,10 +9,6 @@ class Post extends Model
 {
     use HasFactory;
     protected $fillable = ['body'];
-    //MODELS Agregamos una relacion entre la tabla posts y users?
-    public function user()
-    {
-        return $this->belongsTo(User::class);
-    }
+
 
 }

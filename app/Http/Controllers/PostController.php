@@ -14,7 +14,12 @@ class PostController extends Controller
         return view('welcome',['Posts' => $some]);
     }
     public function store(Request $request){
+        $this->validate($request, [
+            'body' => 'required'
+        ]);
+
         Post::create([
+            'user_id' => auth()->id(),
             'body' => $request->body,
             
         ]);
