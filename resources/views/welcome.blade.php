@@ -1,9 +1,9 @@
 @extends('layouts.app')
 @section('content')
 @if (auth()->check())
-<div class="social-feed-box">
-<div class="col-6 mx-auto">
 
+<div class="col-6 mx-auto">
+<div class="social-feed-box">
 <form action="{{ url("/") }}" method="POST">
     @csrf
     <input class= "form-control" type="text"  name="body" placeholder="Post Something">
