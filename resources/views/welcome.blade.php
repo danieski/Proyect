@@ -5,7 +5,7 @@
     <div class="w-50">
 <form action="{{ url("/") }}" method="POST">
     @csrf
-    <input type="text"  name="body" placeholder="Post Something">
+    <input type="form-control form-control-lg"  name="body" placeholder="Post Something">
     <input type="submit"  class="btn btn-success" value="Post">
 </form>
     </div>
