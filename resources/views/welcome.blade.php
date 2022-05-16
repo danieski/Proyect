@@ -51,10 +51,10 @@
 </div>
 </div>
 @endforeach
-
-
+<div class="col-6 mx-auto">
+{{ $Posts->links() }}
+</div>
 
 
 
 @endsection
-@extends('layouts.pagination')
