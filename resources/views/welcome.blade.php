@@ -1,7 +1,8 @@
 @extends('layouts.app')
 @section('content')
 @if (auth()->check())
-<div class="d-flex justify-content-center">
+<div class="col-6 mx-auto">
+
 <form action="{{ url("/") }}" method="POST">
     @csrf
     <input type="text"  name="body" placeholder="Post Something">
