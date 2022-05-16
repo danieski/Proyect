@@ -1,7 +1,7 @@
 @extends('layouts.app')
 @section('content')
 @if (auth()->check())
-<div class="col-6 mx-auto">
+<div class="d-flex justify-content-center">
 <form action="{{ url("/") }}" method="POST">
     @csrf
     <input type="text"  name="body" placeholder="Post Something">
@@ -15,7 +15,7 @@
 <link href="/css/main.css" rel="stylesheet">
 
 @foreach ($Posts as $Post )
-
+<div class="col-6 mx-auto">
 
 
 <div class="social-feed-box">
@@ -49,9 +49,9 @@
         </div>
     </div>
 </div>
-
-@endforeach
 </div>
+@endforeach
+
 
 
 
