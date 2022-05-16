@@ -57,4 +57,4 @@
 
 
 @endsection
-{{ $Posts->links() }}
+@extends('layouts.pagination')
