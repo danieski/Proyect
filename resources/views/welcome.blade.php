@@ -1,13 +1,15 @@
 @extends('layouts.app')
 @section('content')
 @if (auth()->check())
->
+<div class="col-6 mx-auto">
+    <div class="w-50">
 <form action="{{ url("/") }}" method="POST">
     @csrf
-    <input type="form-control form-control-lg"  name="body" placeholder="Post Something">
+    <input class= "form-control" type="text"  name="body" placeholder="Post Something">
     <input type="submit"  class="btn btn-success" value="Post">
 </form>
-   
+    </div>
+</div>    
 @else
     
 @endif
