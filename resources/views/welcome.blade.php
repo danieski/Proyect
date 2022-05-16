@@ -13,9 +13,9 @@
 @endif
 <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
 <link href="/css/main.css" rel="stylesheet">
-<div class="col-6 mx-auto">
-@foreach ($Posts as $Post )
 
+@foreach ($Posts as $Post )
+<div class="col-6 mx-auto">
 
 
 <div class="social-feed-box">
@@ -49,8 +49,10 @@
         </div>
     </div>
 </div>
-
+</div>
 @endforeach
+<div class="col-6 mx-auto">
+
 {{ $Posts->links() }}
 </div>
 
