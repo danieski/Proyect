@@ -53,7 +53,8 @@
 @endforeach
 
 
-{{ $Posts->links() }}
+
 
 
 @endsection
+{{ $Posts->links() }}
