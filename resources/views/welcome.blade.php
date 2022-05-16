@@ -46,5 +46,6 @@
             <button class="btn btn-white btn-xs"><i class="fa fa-share"></i> Share</button>
         </div>
     </div>
+</div>
 @endforeach
 @endsection
