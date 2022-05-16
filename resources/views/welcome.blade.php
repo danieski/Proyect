@@ -48,8 +48,9 @@
             <button class="btn btn-white btn-xs"><i class="fa fa-share"></i> Share</button>
         </div>
     </div>
-</div>
-</div>
+
 @endforeach
 {{ $Posts->links() }}
+</div>
+</div>
 @endsection
