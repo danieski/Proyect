@@ -1,16 +1,17 @@
 @extends('layouts.app')
 @section('content')
 @if (auth()->check())
-
+{{-- Post if you are loged --}}
 <div class="col-6 mx-auto">
 <div class="card bg-dark text-white">
     <div class="card-body p-5 text-center">
 <form action="{{ url("/") }}" method="POST">
     @csrf
     <input class= "form-control" type="text"  name="body" placeholder="Post Something">
+    
+    </div>
     <input type="submit"  class="btn btn-success" value="Post">
 </form>
-    </div>
 </div>
 </div>
 </div>    
@@ -19,7 +20,7 @@
 @endif
 <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
 <link href="/css/main.css" rel="stylesheet">
-
+{{-- Display the posts from the database --}}
 @foreach ($Posts as $Post )
 <div class="col-6 mx-auto">
 
