@@ -2,21 +2,14 @@
 @section('content')
 @if (auth()->check())
 
-<section class="vh-100 gradient-custom">
-    <div class="container py-5 h-100">
-      <div class="row d-flex justify-content-center align-items-center h-100">
-
-          <div class="card bg-dark text-white" style="border-radius: 1rem;">
-
+<div class="col-6 mx-auto">
+<div class="card bg-dark text-white">
 <form action="{{ url("/") }}" method="POST">
     @csrf
     <input class= "form-control" type="text"  name="body" placeholder="Post Something">
     <input type="submit"  class="btn btn-success" value="Post">
 </form>
-            </div>
-          </div>
-        </div>
-      </div>
+
 </div>
 </div>    
 @else
