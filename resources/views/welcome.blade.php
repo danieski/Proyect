@@ -4,12 +4,14 @@
 
 <div class="col-6 mx-auto">
 <div class="card bg-dark text-white">
+    <div class="card-body p-5 text-center">
 <form action="{{ url("/") }}" method="POST">
     @csrf
     <input class= "form-control" type="text"  name="body" placeholder="Post Something">
     <input type="submit"  class="btn btn-success" value="Post">
 </form>
-
+    </div>
+</div>
 </div>
 </div>    
 @else
