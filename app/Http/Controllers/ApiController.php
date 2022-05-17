@@ -4,7 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use Ilumninate\Support\Facades\Auth;
-
+use App\Models\User;
 class ApiController extends Controller
 {
     public function  register(Request $request)
