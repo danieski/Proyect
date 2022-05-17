@@ -33,10 +33,14 @@
                             @enderror
                     <label class="form-label" for="typePasswordX">Password</label>
                 </div>
+                <button class="btn btn-outline-light btn-lg px-5" type="submit">Login</button>
                 {{-- Remember Password --}}
                 <input class="form-check-input" type="checkbox" name="remember" id="remember" {{ old('remember') ? 'checked' : '' }}>
-                <button class="btn btn-outline-light btn-lg px-5" type="submit">Login</button>
+                
+                <br>
                 </div>
+                <div class="text-center text-white-50"> 
+                    <p>Remember Password</p>
                     <label class="form-check-label" for="remember">
                     {{ __('Remember Me') }}
                     </label>
