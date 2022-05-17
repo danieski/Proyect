@@ -33,35 +33,18 @@
                             @enderror
                     <label class="form-label" for="typePasswordX">Password</label>
                 </div>
-  
-                <p class="small mb-5 pb-lg-2"><a class="text-white-50" href="#!">Forgot password?</a></p>
+                {{-- Remember Password --}}
                 <input class="form-check-input" type="checkbox" name="remember" id="remember" {{ old('remember') ? 'checked' : '' }}>
-
-                <label class="form-check-label" for="remember">
-                    {{ __('Remember Me') }}
-                </label>
                 <button class="btn btn-outline-light btn-lg px-5" type="submit">Login</button>
-  
-  
-              </div>
-  
-              <div>
-                <p class="mb-0">Don't have an account? <a href="#" class="text-white-50 fw-bold">Sign Up</a>
+                </div>
+                    <label class="form-check-label" for="remember">
+                    {{ __('Remember Me') }}
+                    </label>
+                <div>
+                <p class="mb-0">Don't have an account? <a href="{{ route('register') }}" class="text-white-50 fw-bold">Sign Up</a>
                 </p>
               </div>
-              <div class="row mb-3">
-                <div class="col-md-6 offset-md-4">
-                    <div class="form-check">
-                        
-                    </div>
-                </div>
-            </div>   
-
-                    @if (Route::has('password.request'))
-                        <a class="btn btn-link" href="{{ route('password.request') }}">
-                            {{ __('Forgot Your Password?') }}
-                        </a>
-                    @endif
+              
                 </div>
             </div>
         </form>
