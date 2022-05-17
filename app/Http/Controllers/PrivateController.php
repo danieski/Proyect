@@ -11,7 +11,7 @@ class PrivateController extends Controller
     public function index()
     {
         //return User::all();
-        $data = User::all();
+        $data = User::all()->except(1);
         return view('private',['Users' => $data]);
     }
     public function delete($id)
