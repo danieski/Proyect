@@ -4,6 +4,7 @@ namespace App\Providers;
 
 use Illuminate\Support\ServiceProvider;
 use Illuminate\Pagination\Paginator;
+use Laravel\Passport\Passport;
 
 class AppServiceProvider extends ServiceProvider
 {
@@ -16,6 +17,9 @@ class AppServiceProvider extends ServiceProvider
     {
         //
     }
+    protected $policies = [
+        'App\Models\Model' => 'App\Policies\ModelPolicy',
+    ];
 
     /**
      * Bootstrap any application services.
@@ -23,7 +27,13 @@ class AppServiceProvider extends ServiceProvider
      * @return void
      */
     public function boot()
+    
     {
+        $this->registerPolicies();
+ 
+        if (! $this->app->routesAreCached()) {
+            Passport::routes();
+        }
         Paginator::useBootstrapFive();
         Paginator::useBootstrapFour();
     }
