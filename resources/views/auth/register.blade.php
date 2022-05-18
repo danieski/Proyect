@@ -15,7 +15,7 @@
                         <div class="form-outline form-white mb-4">
                     <form method="POST" action="{{ route('register') }}">
                     @csrf
-                    <input id="name" type="text" class="form-control @error('name') is-invalid @enderror" name="name" value="{{ old('name') }}" required autocomplete="name" autofocus>
+                    <input placeholder= "Name" id="name" type="text" class="form-control @error('name') is-invalid @enderror" name="name" value="{{ old('name') }}" required autocomplete="name" autofocus>
 
                     @error('name')
                         <span class="invalid-feedback" role="alert">
@@ -27,7 +27,7 @@
                 
                 {{-- Email --}}
                 <div class="form-outline form-white mb-4">
-                    <input id="email" type="email" class="form-control @error('email') is-invalid @enderror" name="email" value="{{ old('email') }}" required autocomplete="email">
+                    <input placeholder= "Email" id="email" type="email" class="form-control @error('email') is-invalid @enderror" name="email" value="{{ old('email') }}" required autocomplete="email">
 
                     @error('email')
                         <span class="invalid-feedback" role="alert">
@@ -37,7 +37,7 @@
                 </div>
                 {{-- Password --}}
                 <div class="form-outline form-white mb-4">
-                    <input id="password" type="password" class="form-control @error('password') is-invalid @enderror" name="password" required autocomplete="new-password">
+                    <input placeholder= "Password" id="password" type="password" class="form-control @error('password') is-invalid @enderror" name="password" required autocomplete="new-password">
 
                                 @error('password')
                                     <span class="invalid-feedback" role="alert">
@@ -48,10 +48,8 @@
                 
                 {{--Password confirm --}}
                 
-                
-                <br>
                 <div class="form-outline form-white mb-4">
-                    <input id="password-confirm" type="password" class="form-control" name="password_confirmation" required autocomplete="new-password">
+                    <input placeholder= "Confirm Password" id="password-confirm" type="password" class="form-control" name="password_confirmation" required autocomplete="new-password">
 
                                 @error('password')
                                     <span class="invalid-feedback" role="alert">
