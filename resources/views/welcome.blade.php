@@ -1,5 +1,12 @@
 @extends('layouts.app')
 @section('content')
+<script>
+    $(document).ready(function() {
+     setInterval(function() {
+      $('#res').load('{{ action('PostController@index') }}');
+     }, 5000);
+    });
+   </script>
 @if (auth()->check())
 {{-- Post if you are loged --}}
 <div class="col-6 mx-auto">
@@ -48,11 +55,9 @@
         <p>
             {{$Post->body}}
         </p>
-
+{{-- Like button --}}
         <div class="btn-group">
             <button class="btn btn-white btn-xs"><i class="fa fa-thumbs-up"></i> Like this!</button>
-            <button class="btn btn-white btn-xs"><i class="fa fa-comments"></i> Comment</button>
-            <button class="btn btn-white btn-xs"><i class="fa fa-share"></i> Share</button>
         </div>
     </div>
 </div>
