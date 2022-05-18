@@ -10,7 +10,19 @@ td{
     padding-right:30px;
 }
 </style>
-@if (auth()->user()->name == "admin")
+@if (auth()->guest())
+<div class="card border-success" style="max-width: 20rem;">
+    <div class="card-header bg-transparent border-success">Header</div>
+    <div class="card-body text-success">
+      <h5 class="card-title">Index</h5>
+        <p class="card-text">Hello Guest</p>
+    </div>
+    <div class="card-footer bg-transparent border-success">Footer</div>
+  </div>
+
+
+
+@elseif (auth()->user()->name == "admin")
 <div class="d-flex justify-content-center">
 <div class="col-sm-5 mb-2">
 <div class="card text-center bg-success">
@@ -72,6 +84,7 @@ td{
     </div>
     <div class="card-footer bg-transparent border-success">Footer</div>
   </div>
+  @endif
 </div>
 </div>
 </div>
@@ -80,15 +93,6 @@ td{
 </div>
 </div>
 </section>
-@else
-<div class="card border-success" style="max-width: 20rem;">
-    <div class="card-header bg-transparent border-success">Header</div>
-    <div class="card-body text-success">
-      <h5 class="card-title">Index</h5>
-        <p class="card-text">Hello Guest</p>
-    </div>
-    <div class="card-footer bg-transparent border-success">Footer</div>
-  </div>
 
-@endif
+
 @endsection
