@@ -22,3 +22,4 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 Route::post('/register', [ApiController::class, 'register']);
 Route::post('/login', [ApiController::class, 'login']);
 Route::apiResource('/proyect', ProyectController::class)->middleware('auth:api');
+Route::post('/store', [ProyectController::class, 'store']);
