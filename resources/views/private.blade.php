@@ -9,6 +9,11 @@
 td{
     padding-right:30px;
 }
+.btn-lg {
+    padding: 10px 20px;
+    font-size: 20px;
+    border-radius: 10px;
+}
 </style>
 @if (auth()->guest())
 <div class="d-flex justify-content-center">
