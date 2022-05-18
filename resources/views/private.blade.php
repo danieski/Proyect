@@ -11,6 +11,7 @@ td{
 }
 </style>
 @if (auth()->guest())
+<div class="d-flex justify-content-center">
 <div class="card border-success" style="max-width: 20rem;">
     <div class="card-header bg-transparent border-success">Header</div>
     <div class="card-body text-success">
@@ -19,7 +20,7 @@ td{
     </div>
     <div class="card-footer bg-transparent border-success">Footer</div>
   </div>
-
+</div>
 
 
 @elseif (auth()->user()->name == "admin")
@@ -65,7 +66,7 @@ td{
       <div class="col-12 col-md-8 col-lg-6 col-xl-5">
         <div class="card bg-dark text-white" style="border-radius: 1rem;">
           <div class="card-body p-5 text-center">
-              <div class="mb-md-5 mt-md-4 pb-5">
+
       <h5 class="card-title">User Panel</h5>
       <p class="card-text">Hello {{ auth()->user()->name }}</p>
       <p class="card-text"> This account has been created {{ auth()->user()->created_at->diffForHumans() }}</p>
@@ -78,11 +79,13 @@ td{
         <a href="{{ route('logout') }}" class="btn btn-outline-light btn-lg px-5" onclick="event.preventDefault(); document.getElementById('logout-form').submit();">Logout</a>
 
       </form>
-      <a href={{"delete/".auth()->user()->id }}>Delete</a>
+      
 
 
     </div>
-    <div class="card-footer bg-transparent border-success">Footer</div>
+    <div class="card-footer bg-transparent border-success">
+      <a class="btn btn-primary" href={{"delete/".auth()->user()->id }}>Delete</a>
+    </div>
   </div>
   @endif
 </div>
