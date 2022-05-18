@@ -90,10 +90,11 @@ td{
 </div>
 </div>
 </div>
-</div>
-</div>
 <a class="btn btn-primary btn-lg btn-block" href={{"delete/".auth()->user()->id }}>Delete</a>
 <a class="btn btn-primary btn-lg btn-block" href="{{ route('logout') }}" onclick="event.preventDefault(); document.getElementById('logout-form').submit();">Logout</a>
+</div>
+</div>
+
 </div>
 
 </div>
