@@ -84,7 +84,7 @@ td{
 
     </div>
     <div class="card-footer bg-transparent border-success">
-      <a class="btn btn-primary" href={{"delete/".auth()->user()->id }}>Delete</a>
+      <a class="btn btn-primary btn-lg btn-block" href={{"delete/".auth()->user()->id }}>Delete</a>
     </div>
   </div>
   @endif
