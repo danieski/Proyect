@@ -31,15 +31,15 @@ class ProyectController extends Controller
     {
         $data = $request->all();
 
-        $validator = Validator::make($data, [
-            'Title' => 'required',
-            'Description' => 'required'
-        ]);
-        if ($validator->fails()) {
-            return response (['error' => $validator->error(),
-            'message' =>'Validator Fail'], 400);
+        //$validator = Validator::make($data, [
+        //    'Title' => 'required',
+        //    'Description' => 'required'
+        //]);
+        //if ($validator->fails()) {
+        //    return response (['error' => $validator->error(),
+        //    'message' =>'Validator Fail'], 400);
 
-        }
+        //}
         $Proyect = Proyect::create($data);
 
         return response (['Proyect' =>new ProyectResource($Proyect),
