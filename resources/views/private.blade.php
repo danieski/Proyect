@@ -10,7 +10,7 @@ td{
     padding-right:30px;
 }
 .btn-lg {
-    padding: 10px 20px;
+   margin: 10px;
 
 
 }
