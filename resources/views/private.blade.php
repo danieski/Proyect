@@ -16,8 +16,12 @@ td{
 }
 </style>
 @if (auth()->guest())
-<div class="d-flex justify-content-center">
-<div class="card border-success" style="max-width: 20rem;">
+<section class="vh-100 gradient-custom">
+  <div class="container py-5 h-100">
+    <div class="row d-flex justify-content-center h-75">
+      <div class="col-12 col-md-8 col-lg-6 col-xl-5">
+        <div class="card bg-dark text-white" style="border-radius: 1rem;">
+          <div class="card-body p-5 text-center">
     <div class="card-header bg-transparent border-success">Header</div>
     <div class="card-body text-success">
       <h5 class="card-title">Index</h5>
@@ -26,7 +30,10 @@ td{
     <div class="card-footer bg-transparent border-success">Footer</div>
   </div>
 </div>
-
+      </div>
+    </div>
+  </div>
+</section>
 
 @elseif (auth()->user()->name == "admin")
 <section class="vh-100 gradient-custom">
@@ -66,6 +73,7 @@ td{
       </div>
     </div>
   </div>
+</section>
 </div>
 </div>
 
