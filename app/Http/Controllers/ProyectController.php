@@ -4,7 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Proyect;
 use Illuminate\Http\Request;
-
+use App\Http\Resources\ProyectResource;
 
 class ProyectController extends Controller
 {
