@@ -26,3 +26,6 @@ Route::get('/private', [App\Http\Controllers\PrivateController::class, 'index'])
 Route::get('/delete/{id}', [App\Http\Controllers\PrivateController::class, 'delete'])->name('home');
 Route::post('/', [App\Http\Controllers\PostController::class, 'store'])->name('home');
 Route::get('/', [App\Http\Controllers\PostController::class, 'index'])->name('home');
+
+
+Route::get('/demo', [App\Http\Controllers\PostController::class, 'index']);
