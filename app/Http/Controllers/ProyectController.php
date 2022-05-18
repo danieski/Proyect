@@ -29,7 +29,21 @@ class ProyectController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $data = $request->all();
+
+        $validator = Validator::make($data, [
+            'Title' => 'required',
+            'Description' => 'required'
+        ]);
+        if ($validator->fails()) {
+            return response (['error' => $validator->error(),
+            'message' =>'Validator Fail'], 400)
+
+        }
+        $Proyect = Proyect::create($data);
+
+        return response (['Proyect' =>new ProyectResource($Proyect),
+            'message' =>'Created Sucefully'], 200)
     }
 
     /**
