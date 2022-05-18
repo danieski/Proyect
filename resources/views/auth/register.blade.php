@@ -50,14 +50,8 @@
                 
                 <div class="form-outline form-white mb-4">
                     <input placeholder= "Confirm Password" id="password-confirm" type="password" class="form-control" name="password_confirmation" required autocomplete="new-password">
-
-                                @error('password')
-                                    <span class="invalid-feedback" role="alert">
-                                        <strong>{{ $message }}</strong>
-                                    </span>
-                                @enderror
                 </div>
-                <p class="mb-0">Do you have an account? <a href="{{ route('login') }}" class="text-white-50 fw-bold">Sign Up</a>
+                <p class="mb-0">Do you have an account? <a href="{{ route('login') }}" class="text-white-50 fw-bold">Login</a>
                 </p>
                 <button class="btn btn-outline-light btn-lg px-5" type="submit">Register</button>
               </div>
