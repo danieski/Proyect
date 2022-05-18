@@ -37,13 +37,13 @@ class ProyectController extends Controller
         ]);
         if ($validator->fails()) {
             return response (['error' => $validator->error(),
-            'message' =>'Validator Fail'], 400)
+            'message' =>'Validator Fail'], 400);
 
         }
         $Proyect = Proyect::create($data);
 
         return response (['Proyect' =>new ProyectResource($Proyect),
-            'message' =>'Created Sucefully'], 200)
+            'message' =>'Created Sucefully'], 200);
     }
 
     /**
