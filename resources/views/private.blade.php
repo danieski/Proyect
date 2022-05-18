@@ -11,8 +11,8 @@ td{
 }
 .btn-lg {
     padding: 10px 20px;
-    font-size: 20px;
-    border-radius: 10px;
+
+
 }
 </style>
 @if (auth()->guest())
