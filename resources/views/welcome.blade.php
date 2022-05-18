@@ -1,13 +1,14 @@
 @extends('layouts.app')
 @section('content')
-<script>
+{{-- Refresh the page 
+     <script>
     $(document).ready(function() {
      setInterval(function() {
       $('#res').load('demo.blade.php');
      
      }, 5000);
     });
-   </script>
+   </script>--}}
 @if (auth()->check())
 {{-- Post if you are loged --}}
 <div class="col-6 mx-auto">

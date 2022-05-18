@@ -23,4 +23,23 @@ class ApiController extends Controller
             'access_token' => $accessToken
         ]);
     }
+    public function  login(Request $request)
+    {
+        $loginData = $request->validate([
+            'email' => 'required|string',
+            'password' => 'required|string',
+        ]);
+        
+       if (!auth()->attemp($loginData)) {
+           return response(['message' => 'Invalid Credetials']);
+
+       }
+
+       $accessToken = auth()->user()->createToken('authToken')->accessToken;
+
+        return response([
+            'user' => auth()->user(),
+            'access_token' => $accessToken
+        ]);
+    }
 }
