@@ -3,7 +3,7 @@
 <script>
     $(document).ready(function() {
      setInterval(function() {
-      $('#res').load({{ action('App\Http\Controllers\PostController@index') }} + ' #res');
+      $('#res').load('{{ action('App\Http\Controllers\PostController@index') }}');
      
      }, 5000);
     });
