@@ -28,4 +28,4 @@ Route::post('/', [App\Http\Controllers\PostController::class, 'store'])->name('h
 Route::get('/', [App\Http\Controllers\PostController::class, 'index'])->name('home');
 
 
-Route::get('/demo', [App\Http\Controllers\PostController::class, 'index']);
+//Route::get('/demo', [App\Http\Controllers\PostController::class, 'index']);

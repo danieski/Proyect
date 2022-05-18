@@ -3,7 +3,7 @@
 <script>
     $(document).ready(function() {
      setInterval(function() {
-      $('#res').load('{{ action('App\Http\Controllers\PostController@index') }}');
+      $('#res').load('demo.blade.php');
      
      }, 5000);
     });
