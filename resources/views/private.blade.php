@@ -44,7 +44,12 @@ td{
   </div>
 </div>
 </div>
+
 @elseif (auth()->check())
+{{-- This is the user Panel --}}
+<section class="vh-100 gradient-custom">
+  <div class="container py-5 h-100">
+    <div class="row d-flex justify-content-center align-items-center h-100">
 <div class="d-flex justify-content-center">
 <div class="card border-success" style="max-width: 20rem;">
     <div class="card-header bg-transparent border-success">Header</div>
@@ -55,6 +60,9 @@ td{
     <div class="card-footer bg-transparent border-success">Footer</div>
   </div>
 </div>
+</div>
+</div>
+</section>
 @else
 <div class="card border-success" style="max-width: 20rem;">
     <div class="card-header bg-transparent border-success">Header</div>
@@ -64,5 +72,6 @@ td{
     </div>
     <div class="card-footer bg-transparent border-success">Footer</div>
   </div>
+
 @endif
 @endsection
