@@ -17,7 +17,7 @@ class ProyectController extends Controller
     {
         $Proyect = Proyect::all();
 
-        return response(['ceos' => ProyectResource::collection($Proyect),
+        return response(['Proyect' => ProyectResource::collection($Proyect),
         'message' => 'Retrived Sucefull'], 200);
     }
 
