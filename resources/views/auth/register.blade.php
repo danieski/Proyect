@@ -10,8 +10,8 @@
                 <div class="mb-md-5 mt-md-4 pb-5">
                 {{-- Name --}}
 
-                  <h2 class="fw-bold mb-2 text-uppercase">Login</h2>
-                    <p class="text-white-50 mb-5">Please enter your login and password!</p>
+                  <h2 class="fw-bold mb-2 text-uppercase">Register</h2>
+                    <p class="text-white-50 mb-5">Please enter your email and password!</p>
                         <div class="form-outline form-white mb-4">
                     <form method="POST" action="{{ route('register') }}">
                     @csrf
@@ -61,11 +61,12 @@
                 </div>
                 <p class="mb-0">Do you have an account? <a href="{{ route('login') }}" class="text-white-50 fw-bold">Sign Up</a>
                 </p>
+                <button class="btn btn-outline-light btn-lg px-5" type="submit">Register</button>
               </div>
               
                 </div>
             </div>
-            <button class="btn btn-outline-light btn-lg px-5" type="submit">Login</button>
+            
         </form>
             </div>
           </div>
