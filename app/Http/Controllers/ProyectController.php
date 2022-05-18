@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Models\Proyect;
 use Illuminate\Http\Request;
 
+
 class ProyectController extends Controller
 {
     /**
@@ -14,7 +15,10 @@ class ProyectController extends Controller
      */
     public function index()
     {
-        //
+        $Proyect = Proyect::all();
+
+        return response(['ceos' => ProyectResource::collection($Proyect),
+        'message' => 'Retrived Sucefull'], 200);
     }
 
     /**
