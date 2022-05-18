@@ -19,7 +19,13 @@ class PrivateController extends Controller
         
         $data = User::find($id);
         $data -> delete();
-        return redirect('private');
+        if (auth()->user()->name == "admin") {
+            return redirect('private');
+        } else {
+            return redirect('welcom');
+        }
+        
+
     }
 
 }
