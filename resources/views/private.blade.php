@@ -56,6 +56,7 @@ td{
               <div class="mb-md-5 mt-md-4 pb-5">
       <h5 class="card-title">User Panel</h5>
       <p class="card-text">Hello {{ auth()->user()->name }}</p>
+      <p class="card-text">Hello {{ auth()->user()->created_at }}</p>
     </div>
     <div class="card-footer bg-transparent border-success">Footer</div>
   </div>
