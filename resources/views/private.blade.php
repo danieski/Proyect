@@ -54,10 +54,6 @@ td{
         <div class="card bg-dark text-white" style="border-radius: 1rem;">
           <div class="card-body p-5 text-center">
               <div class="mb-md-5 mt-md-4 pb-5">
-      <div class="d-flex justify-content-center">
-        <div class="card border-success" style="max-width: 20rem;">
-    <div class="card-header bg-transparent border-success">Header</div>
-    <div class="card-body text-success">
       <h5 class="card-title">User Panel</h5>
       <p class="card-text">Hello {{ auth()->user()->name }}</p>
     </div>
