@@ -23,6 +23,7 @@ Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 Route::get('/private', [App\Http\Controllers\PrivateController::class, 'index'])->name('home');
+Route::get('/subscription', [App\Http\Controllers\SubscriptionController::class, 'index']);
 Route::get('/delete/{id}', [App\Http\Controllers\PrivateController::class, 'delete'])->name('home');
 Route::post('/', [App\Http\Controllers\PostController::class, 'store'])->name('home');
 Route::get('/', [App\Http\Controllers\PostController::class, 'index'])->name('home');

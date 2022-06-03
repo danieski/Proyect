@@ -7,7 +7,7 @@
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <title>Danieski</title>
+    <title>Kat-aya</title>
 
     <!-- Scripts -->
     <script src="{{ asset('js/app.js') }}" defer></script>
@@ -40,6 +40,9 @@
                     <ul class="navbar-nav ms-auto">
                         <li class="nav-item">
                             <a class="nav-link" href="{{ url('private') }}">Private</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="{{ url('subscription') }}">Subscription</a>
                         </li>
                         <!-- Authentication Links -->
                         @guest
